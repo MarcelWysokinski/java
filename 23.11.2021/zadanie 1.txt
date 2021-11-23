@@ -1,0 +1,43 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+    static void dodawanie(int firstName,int secondName,int thirdName, int fourthName){
+        int dodawanie;
+        dodawanie = firstName + secondName + thirdName + fourthName;
+        System.out.println("Oto wynik dodawania:" + dodawanie);
+    }
+    static void odejmowanie(int firstName,int secondName,int thirdName, int fourthName){
+        int odejmowanie;
+        odejmowanie = firstName - secondName - thirdName - fourthName;
+        System.out.println("Oto wynik odejmowania:" + odejmowanie);
+    }
+    static void mnozenie(int firstName,int secondName,int thirdName, int fourthName){
+        int mnozenie;
+        mnozenie = firstName * secondName * thirdName * fourthName;
+        System.out.println("Oto wynik mnozenia:" + mnozenie);
+    }
+    static void dzielenie(int firstName,int secondName,int thirdName, int fourthName){
+        int dzielenie;
+        dzielenie = firstName / secondName / thirdName / fourthName;
+        System.out.println("Oto wynik dzielenia:" + dzielenie);
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Podaj liczbe pierwsza bedzie ona najwazniesza i musi byc najwieszka");
+        int firstName = scan.nextInt() ;
+        System.out.println("Podaj liczbe druga");
+        int secondName = scan.nextInt();
+        System.out.println("Podaj liczbe trzecia");
+        int thirdName = scan.nextInt() ;
+        System.out.println("Podaj liczbe czwarta");
+        int fourthName = scan.nextInt() ;
+
+        dodawanie(firstName, secondName, thirdName,  fourthName);
+        odejmowanie(firstName, secondName, thirdName,  fourthName);
+        mnozenie(firstName, secondName, thirdName,  fourthName);
+        dzielenie(firstName, secondName, thirdName,  fourthName);
+
+    }
+}
